@@ -79,16 +79,12 @@ test:
 #
 production:
   <<: *default
-<<<<<<< HEAD
   adapter: postgresql
   encoding: unicode
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  database: mysite_fa # CHANGE THIS TO YOUR OWN DATABASE NAME IN RENDER
-  username: fa # CHANGE THIS TO YOUR OWN DATABASE USERNAME IN RENDER
+  database: mysite_92ah # CHANGE THIS TO YOUR OWN DATABASE NAME IN RENDER
+  username: mysite # CHANGE THIS TO YOUR OWN DATABASE USERNAME IN RENDER
   password: <%= ENV['DATABASE_PASSWORD'] %> # DO NOT MODIFY THIS LINE!
   url: <%= ENV['DATABASE_URL'] %> # DO NOT MODIFY THIS LINE!
-=======
-  database: db/production.sqlite3
->>>>>>> parent of 75bfd14... Done
