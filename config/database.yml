@@ -79,6 +79,7 @@ test:
 #
 production:
   <<: *default
+<<<<<<< HEAD
   adapter: postgresql
   encoding: unicode
   # For details on connection pooling, see Rails configuration guide
@@ -88,3 +89,6 @@ production:
   username: fa # CHANGE THIS TO YOUR OWN DATABASE USERNAME IN RENDER
   password: <%= ENV['DATABASE_PASSWORD'] %> # DO NOT MODIFY THIS LINE!
   url: <%= ENV['DATABASE_URL'] %> # DO NOT MODIFY THIS LINE!
+=======
+  database: db/production.sqlite3
+>>>>>>> parent of 75bfd14... Done
